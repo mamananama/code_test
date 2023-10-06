@@ -25,9 +25,8 @@ Print an alphabetically-ordered list of first names for every user with a gmail 
 
 #### Sample Input
 
-6
-
 ```
+6
 riya riya@gmail.com
 julia julia@julia.me
 julia sjulia@gmail.com
