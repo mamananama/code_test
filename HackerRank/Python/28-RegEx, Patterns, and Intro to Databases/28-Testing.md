@@ -1,6 +1,6 @@
 # Day 28: RegEx, Patterns, and Intro to Databases
 
-https://www.hackerrank.com/challenges/30-regex-patterns/problem
+> https://www.hackerrank.com/challenges/30-regex-patterns/problem
 
 #### Task
 

@@ -1,3 +1,7 @@
+# String Formatting
+
+> https://www.hackerrank.com/challenges/python-string-formatting/problem
+
 Given an integer, , print the following values for each integer from to :
 
 Decimal
