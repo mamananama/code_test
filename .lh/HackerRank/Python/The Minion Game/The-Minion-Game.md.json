@@ -1,0 +1,134 @@
+{
+    "sourceFile": "HackerRank/Python/The Minion Game/The-Minion-Game.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 29,
+            "patches": [
+                {
+                    "date": 1701691831596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1701691838703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-# \n\\ No newline at end of file\n+# The Minion Game\r\n"
+                },
+                {
+                    "date": 1701691849184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n # The Minion Game\r\n+<https://www.hackerrank.com/challenges/the-minion-game>\r\n+\r\n"
+                },
+                {
+                    "date": 1701697938276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,6 @@\n # The Minion Game\r\n <https://www.hackerrank.com/challenges/the-minion-game>\r\n \r\n+# Solution\r\n+```\r\n+```\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701697946449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,33 @@\n # The Minion Game\r\n <https://www.hackerrank.com/challenges/the-minion-game>\r\n \r\n # Solution\r\n+```python\r\n+def minion_game(string):\r\n\\ No newline at end of file\n+    vowels = 'AEIOU'\r\n+\r\n+    s = []\r\n+    k = []\r\n+\r\n+    for i in range(len(string)):\r\n+        if string[i] not in vowels:\r\n+            s.append(i)\r\n+        else:\r\n+            k.append(i)\r\n+\r\n+    stuart = 0\r\n+    kevin = 0\r\n+\r\n+    for i in s:\r\n+        stuart += (len(string) - i)\r\n+    for i in k:\r\n+        kevin += (len(string) - i)\r\n+\r\n+    if stuart > kevin:\r\n+        print(f'Stuart {stuart}')\r\n+    elif stuart < kevin:\r\n+        print(f'Kevin {kevin}')\r\n+    else:\r\n+        print('Draw')\r\n ```\r\n-```\n+\r\n"
+                },
+                {
+                    "date": 1701697957671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n # The Minion Game\r\n <https://www.hackerrank.com/challenges/the-minion-game>\r\n \r\n # Solution\r\n+\r\n ```python\r\n def minion_game(string):\r\n     vowels = 'AEIOU'\r\n \r\n@@ -28,5 +29,7 @@\n     elif stuart < kevin:\r\n         print(f'Kevin {kevin}')\r\n     else:\r\n         print('Draw')\r\n-```\n\\ No newline at end of file\n+```\r\n+\r\n+* vow\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701697963718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n     else:\r\n         print('Draw')\r\n ```\r\n \r\n-* vow\n\\ No newline at end of file\n+* `vowels=`\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701697970875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n     else:\r\n         print('Draw')\r\n ```\r\n \r\n-* `vowels=`\n\\ No newline at end of file\n+* `vowels='AEIOU`\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701697977147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n     else:\r\n         print('Draw')\r\n ```\r\n \r\n-* `vowels='AEIOU`\n\\ No newline at end of file\n+* `vowels='AEIOU`를 선언하여 모음을 따로 \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701697982660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n     else:\r\n         print('Draw')\r\n ```\r\n \r\n-* `vowels='AEIOU`를 선언하여 모음을 따로 \n\\ No newline at end of file\n+* `vowels='AEIOU`를 선언하여 모음을 문자열로 \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701697988464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n     else:\r\n         print('Draw')\r\n ```\r\n \r\n-* `vowels='AEIOU`를 선언하여 모음을 문자열로 \n\\ No newline at end of file\n+* `vowels='AEIOU`를 선언하여 모음의 모음을 문자열로 \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701697997084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n     else:\r\n         print('Draw')\r\n ```\r\n \r\n-* `vowels='AEIOU`를 선언하여 모음의 모음을 문자열로 \n\\ No newline at end of file\n+* `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현,  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701698002995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n     else:\r\n         print('Draw')\r\n ```\r\n \r\n-* `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현,  \n\\ No newline at end of file\n+* `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if ` \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701698010812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n     else:\r\n         print('Draw')\r\n ```\r\n \r\n-* `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if ` \n\\ No newline at end of file\n+* `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if ~~ in vowels` \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701698020455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n     else:\r\n         print('Draw')\r\n ```\r\n \r\n-* `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if ~~ in vowels` \n\\ No newline at end of file\n+* `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if __~~__ in vowels` 로 \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701698026365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n     else:\r\n         print('Draw')\r\n ```\r\n \r\n-* `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if __~~__ in vowels` 로 \n\\ No newline at end of file\n+* `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if _ in vowels` 로 \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701698034709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,5 @@\n     else:\r\n         print('Draw')\r\n ```\r\n \r\n-* `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if _ in vowels` 로 \n\\ No newline at end of file\n+* `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if _ in vowels` 로 `string`\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701698051660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,5 +31,6 @@\n     else:\r\n         print('Draw')\r\n ```\r\n \r\n-* `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if _ in vowels` 로 `string`\n\\ No newline at end of file\n+* `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if _ in vowels` 로 `string`의 모음을 따로 찾아낼 수 있도록 했다.\r\n+* \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701698061611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,5 @@\n         print('Draw')\r\n ```\r\n \r\n * `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if _ in vowels` 로 `string`의 모음을 따로 찾아낼 수 있도록 했다.\r\n-* \n\\ No newline at end of file\n+* 모음만 따로 모은\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701698068613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,5 @@\n         print('Draw')\r\n ```\r\n \r\n * `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if _ in vowels` 로 `string`의 모음을 따로 찾아낼 수 있도록 했다.\r\n-* 모음만 따로 모은\n\\ No newline at end of file\n+* 모음만 따로 모은, `s[]`\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701698075711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,5 @@\n         print('Draw')\r\n ```\r\n \r\n * `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if _ in vowels` 로 `string`의 모음을 따로 찾아낼 수 있도록 했다.\r\n-* 모음만 따로 모은, `s[]`\n\\ No newline at end of file\n+* 자음만 따로 모은, `s[]` 자음만 따로 모은, `s[]`\r\n"
+                },
+                {
+                    "date": 1701698081527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,5 @@\n         print('Draw')\r\n ```\r\n \r\n * `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if _ in vowels` 로 `string`의 모음을 따로 찾아낼 수 있도록 했다.\r\n-* 자음만 따로 모은, `s[]` 자음만 따로 모은, `s[]`\r\n+* 자음만 따로 모은, `s[]` 모음만 따로 모은, `ㅏ[]`\r\n"
+                },
+                {
+                    "date": 1701698090771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,5 @@\n         print('Draw')\r\n ```\r\n \r\n * `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if _ in vowels` 로 `string`의 모음을 따로 찾아낼 수 있도록 했다.\r\n-* 자음만 따로 모은, `s[]` 모음만 따로 모은, `ㅏ[]`\r\n+* 자음만 따로 모은, `s[]` 모음만 따로 모은, `k[]` 리스트를 선언\r\n"
+                },
+                {
+                    "date": 1701698104090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,6 @@\n         print('Draw')\r\n ```\r\n \r\n * `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if _ in vowels` 로 `string`의 모음을 따로 찾아낼 수 있도록 했다.\r\n-* 자음만 따로 모은, `s[]` 모음만 따로 모은, `k[]` 리스트를 선언\r\n+* 자음만 따로 모은, `s[]` 모음만 따로 모은, `k[]` 리스트를 선언했다.\r\n+* 해당 문자로 조합 가능한 문자열\r\n"
+                },
+                {
+                    "date": 1701698115266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,5 +33,5 @@\n ```\r\n \r\n * `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if _ in vowels` 로 `string`의 모음을 따로 찾아낼 수 있도록 했다.\r\n * 자음만 따로 모은, `s[]` 모음만 따로 모은, `k[]` 리스트를 선언했다.\r\n-* 해당 문자로 조합 가능한 문자열\r\n+* 해당 문자로 조합 가능한 문자열의 수는, 해당 문자의 시작 index\r\n"
+                },
+                {
+                    "date": 1701698123193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,5 +33,5 @@\n ```\r\n \r\n * `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if _ in vowels` 로 `string`의 모음을 따로 찾아낼 수 있도록 했다.\r\n * 자음만 따로 모은, `s[]` 모음만 따로 모은, `k[]` 리스트를 선언했다.\r\n-* 해당 문자로 조합 가능한 문자열의 수는, 해당 문자의 시작 index\r\n+* 해당 문자로 조합 가능한 문자열의 수는, `해당 문자의 시작 index-``\r\n"
+                },
+                {
+                    "date": 1701698130030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,5 +33,5 @@\n ```\r\n \r\n * `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if _ in vowels` 로 `string`의 모음을 따로 찾아낼 수 있도록 했다.\r\n * 자음만 따로 모은, `s[]` 모음만 따로 모은, `k[]` 리스트를 선언했다.\r\n-* 해당 문자로 조합 가능한 문자열의 수는, `해당 문자의 시작 index-``\r\n+* 해당 문자로 조합 가능한 문자열의 수는, `(해당 문자의 시작 index -`\r\n"
+                },
+                {
+                    "date": 1701698143529,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,5 +33,5 @@\n ```\r\n \r\n * `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if _ in vowels` 로 `string`의 모음을 따로 찾아낼 수 있도록 했다.\r\n * 자음만 따로 모은, `s[]` 모음만 따로 모은, `k[]` 리스트를 선언했다.\r\n-* 해당 문자로 조합 가능한 문자열의 수는, `(해당 문자의 시작 index -`\r\n+* 해당 문자로 조합 가능한 문자열의 수는, `(해당 문자의 시작 index) - (문자열의 )`\r\n"
+                },
+                {
+                    "date": 1701698156551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,5 +33,5 @@\n ```\r\n \r\n * `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if _ in vowels` 로 `string`의 모음을 따로 찾아낼 수 있도록 했다.\r\n * 자음만 따로 모은, `s[]` 모음만 따로 모은, `k[]` 리스트를 선언했다.\r\n-* 해당 문자로 조합 가능한 문자열의 수는, `(해당 문자의 시작 index) - (문자열의 )`\r\n+* 해당 문자로 조합 가능한 문자열의 수는, `(해당 문자의 시작 index) - (문자열의 길이)`로 계산할 수 있기 때문에,\r\n"
+                },
+                {
+                    "date": 1701698170107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,5 +33,7 @@\n ```\r\n \r\n * `vowels='AEIOU`를 선언하여 모음의 집합을 문자열로 표현, `if _ in vowels` 로 `string`의 모음을 따로 찾아낼 수 있도록 했다.\r\n * 자음만 따로 모은, `s[]` 모음만 따로 모은, `k[]` 리스트를 선언했다.\r\n-* 해당 문자로 조합 가능한 문자열의 수는, `(해당 문자의 시작 index) - (문자열의 길이)`로 계산할 수 있기 때문에,\r\n+* 해당 문자로 조합 가능한 문자열의 수는, `(해당 문자의 시작 index) - (문자열의 길이)`로 계산할 수 있다.\r\n+  \r\n+\r\n"
+                }
+            ],
+            "date": 1701691831596,
+            "name": "Commit-0",
+            "content": "# "
+        }
+    ]
+}

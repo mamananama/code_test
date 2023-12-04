@@ -1,0 +1,22 @@
+{
+    "sourceFile": "HackerRank/Python/The Minion Game/the-minion-game-solution.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1701691853165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1701697923983,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,26 @@\n def minion_game(string):\r\n-    # your code goes here\r\n+    vowels = 'AEIOU'\r\n \r\n-if __name__ == '__main__':\r\n-    s = input()\r\n\\ No newline at end of file\n-    minion_game(s)\n+    s = []\r\n+    k = []\r\n+\r\n+    for i in range(len(string)):\r\n+        if string[i] not in vowels:\r\n+            s.append(i)\r\n+        else:\r\n+            k.append(i)\r\n+\r\n+    stuart = 0\r\n+    kevin = 0\r\n+\r\n+    for i in s:\r\n+        stuart += (len(string) - i)\r\n+    for i in k:\r\n+        kevin += (len(string) - i)\r\n+\r\n+    if stuart > kevin:\r\n+        print(f'Stuart {stuart}')\r\n+    elif stuart < kevin:\r\n+        print(f'Kevin {kevin}')\r\n+    else:\r\n+        print('Draw')\r\n"
+                }
+            ],
+            "date": 1701691853165,
+            "name": "Commit-0",
+            "content": "def minion_game(string):\r\n    # your code goes here\r\n\r\nif __name__ == '__main__':\r\n    s = input()\r\n    minion_game(s)"
+        }
+    ]
+}
