@@ -1,0 +1,26 @@
+{
+    "sourceFile": "HackerRank/Python/Merge-The-Tool/Merge-The-Tool-solution.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1701781620465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1701781626401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,6 @@\n+def merge_the_tools(string, k):\r\n+    # your code goes here\r\n+\r\n+if __name__ == '__main__':\r\n+    string, k = input(), int(input())\r\n+    merge_the_tools(string, k)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701787242413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,13 @@\n def merge_the_tools(string, k):\r\n-    # your code goes here\r\n+    t = []\r\n+    i = 0\r\n+    while i < len(string):\r\n+        t.append(string[i:i+k])\r\n\\ No newline at end of file\n+        i = i + k\r\n \r\n-if __name__ == '__main__':\r\n-    string, k = input(), int(input())\r\n-    merge_the_tools(string, k)\n+    for i in t:\r\n+        temp = []\r\n+        for c in i:\r\n+            if c not in temp:\r\n+                temp.append(c)\r\n+        print(''.join(temp))\r\n"
+                }
+            ],
+            "date": 1701781620465,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "sourceFile": "HackerRank/Python/Merge-The-Tool/Merge-The-Tool.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1701787260030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1701787269147,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n-# \n\\ No newline at end of file\n+# Merge the Tools!\r\n+LINK <https://www.hackerrank.com/challenges/merge-the-tools/>\r\n"
+                },
+                {
+                    "date": 1701787279399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+# Merge the Tools!\r\n+<https://www.hackerrank.com/challenges/merge-the-tools/>\r\n+\r\n+\r\n+# solution\r\n+```python\r\n+```\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701787286260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,18 @@\n \r\n \r\n # solution\r\n ```python\r\n-```\n-# Merge the Tools!\r\n-LINK <https://www.hackerrank.com/challenges/merge-the-tools/>\n\\ No newline at end of file\n+def merge_the_tools(string, k):\r\n+    t = []\r\n+    i = 0\r\n+    while i < len(string):\r\n+        t.append(string[i:i+k])\r\n+        i = i + k\r\n+\r\n+    for i in t:\r\n+        temp = []\r\n+        for c in i:\r\n+            if c not in temp:\r\n+                temp.append(c)\r\n+        print(''.join(temp))\r\n+```\r\n"
+                },
+                {
+                    "date": 1701787295604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,4 +17,6 @@\n             if c not in temp:\r\n                 temp.append(c)\r\n         print(''.join(temp))\r\n ```\r\n+\r\n+* `string`\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701787302161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,5 @@\n                 temp.append(c)\r\n         print(''.join(temp))\r\n ```\r\n \r\n-* `string`\n\\ No newline at end of file\n+* `string`문자열이 주어지면, `k`\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701787310453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,5 @@\n                 temp.append(c)\r\n         print(''.join(temp))\r\n ```\r\n \r\n-* `string`문자열이 주어지면, `k`\n\\ No newline at end of file\n+* `string`문자열이 주어지면, `k`의 단위로 문자\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701787315846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,5 @@\n                 temp.append(c)\r\n         print(''.join(temp))\r\n ```\r\n \r\n-* `string`문자열이 주어지면, `k`의 단위로 문자\n\\ No newline at end of file\n+* `string`문자열이 주어지면, `k`의 단위로 문자열을 쪼갠뒤, \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701787328914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,5 @@\n                 temp.append(c)\r\n         print(''.join(temp))\r\n ```\r\n \r\n-* `string`문자열이 주어지면, `k`의 단위로 문자열을 쪼갠뒤, \n\\ No newline at end of file\n+* `string`문자열이 주어지면, `k`의 단위로 문자열을 쪼갠뒤, 해당 문자열의 중복되는 문자를 제거하고 출력하는 문제이다.\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1701787260030,
+            "name": "Commit-0",
+            "content": "# "
+        }
+    ]
+}
