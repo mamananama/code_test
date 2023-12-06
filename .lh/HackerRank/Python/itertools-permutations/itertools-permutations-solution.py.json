@@ -1,0 +1,26 @@
+{
+    "sourceFile": "HackerRank/Python/itertools-permutations/itertools-permutations-solution.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1701872209700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1701872291313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,6 +7,8 @@\n         x), permutations(data[0], int(data[1]))))\r\n else:\r\n     result = list(map(lambda x: ''.join(x), permutations(data[0])))\r\n \r\n-for i in sorted(result):\r\n+sorted_result = result.sort()\r\n+\r\n+for i in sorted(sorted_result):\r\n     print(i)\r\n"
+                },
+                {
+                    "date": 1701872365645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,6 @@\n         x), permutations(data[0], int(data[1]))))\r\n else:\r\n     result = list(map(lambda x: ''.join(x), permutations(data[0])))\r\n \r\n-sorted_result = result.sort()\r\n-\r\n-for i in sorted(sorted_result):\r\n+for i in sorted(result):\r\n     print(i)\r\n"
+                }
+            ],
+            "date": 1701872209700,
+            "name": "Commit-0",
+            "content": "from itertools import permutations\r\n\r\ndata = input().split(' ')\r\n\r\nif len(data) > 1:\r\n    result = list(map(lambda x: ''.join(\r\n        x), permutations(data[0], int(data[1]))))\r\nelse:\r\n    result = list(map(lambda x: ''.join(x), permutations(data[0])))\r\n\r\nfor i in sorted(result):\r\n    print(i)\r\n"
+        }
+    ]
+}
