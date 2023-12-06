@@ -1,0 +1,22 @@
+{
+    "sourceFile": "HackerRank/Python/itertools-product/itertools-product-solution.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1701870386085,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1701871293206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+from itertools import product\r\n+\r\n+data = []\r\n+while True:\r\n+    try:\r\n+        s = input()\r\n+        data.append(map(int, s.split(' ')))\r\n+    except:\r\n+        break\r\n+\r\n+result = product(*data)\r\n+\r\n+for i in result:\r\n+    print(i, end=' ')\r\n"
+                }
+            ],
+            "date": 1701870386085,
+            "name": "Commit-0",
+            "content": ""
+        }
+    ]
+}

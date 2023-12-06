@@ -1,0 +1,74 @@
+{
+    "sourceFile": "HackerRank/Python/itertools-product/itertools-product.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 14,
+            "patches": [
+                {
+                    "date": 1701870368775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1701870378077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,2 @@\n+# itertools-product\r\n+LINK <https://www.hackerrank.com/challenges/itertools-product/>\r\n"
+                },
+                {
+                    "date": 1701870384617,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,2 @@\n # itertools-product\r\n-LINK <https://www.hackerrank.com/challenges/itertools-product/>\r\n-#\n\\ No newline at end of file\n+> <https://www.hackerrank.com/challenges/itertools-product/>\r\n"
+                },
+                {
+                    "date": 1701871295995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n # itertools-product\r\n > <https://www.hackerrank.com/challenges/itertools-product/>\r\n+\r\n"
+                },
+                {
+                    "date": 1701871303865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,6 @@\n # itertools-product\r\n > <https://www.hackerrank.com/challenges/itertools-product/>\r\n \r\n+# solution\r\n+```python\r\n+```\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701871310616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,22 @@\n # itertools-product\r\n > <https://www.hackerrank.com/challenges/itertools-product/>\r\n \r\n # solution\r\n+\r\n ```python\r\n+from itertools import product\r\n+\r\n+data = []\r\n+while True:\r\n+    try:\r\n+        s = input()\r\n+        data.append(map(int, s.split(' ')))\r\n+    except:\r\n+        break\r\n+\r\n+result = product(*data)\r\n+\r\n+for i in result:\r\n+    print(i, end=' ')\r\n+\r\n ```\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701871316525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,7 @@\n \r\n for i in result:\r\n     print(i, end=' ')\r\n \r\n-```\n\\ No newline at end of file\n+```\r\n+\r\n+* Python \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701871329112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,5 @@\n     print(i, end=' ')\r\n \r\n ```\r\n \r\n-* Python \n\\ No newline at end of file\n+* Python 라이브러리인 itertools를 활용하는 예제이다.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701871346675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,6 @@\n     print(i, end=' ')\r\n \r\n ```\r\n \r\n-* Python 라이브러리인 itertools를 활용하는 예제이다.\n\\ No newline at end of file\n+* Python 라이브러리인 itertools를 활용하는 예제이다.\r\n+* `try-except`\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701871352987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,5 @@\n \r\n ```\r\n \r\n * Python 라이브러리인 itertools를 활용하는 예제이다.\r\n-* `try-except`\n\\ No newline at end of file\n+* `try-except` 문으로 `input()`\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701871363672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,5 @@\n \r\n ```\r\n \r\n * Python 라이브러리인 itertools를 활용하는 예제이다.\r\n-* `try-except` 문으로 `input()`\n\\ No newline at end of file\n+* `try-except` 문으로 `input()`을 받고, 해당 \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701871372612,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,5 @@\n \r\n ```\r\n \r\n * Python 라이브러리인 itertools를 활용하는 예제이다.\r\n-* `try-except` 문으로 `input()`을 받고, 해당 \n\\ No newline at end of file\n+* `try-except` 문으로 `input()`을 받고, 해당 `input`값들을 `map()`\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701871378845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,5 @@\n \r\n ```\r\n \r\n * Python 라이브러리인 itertools를 활용하는 예제이다.\r\n-* `try-except` 문으로 `input()`을 받고, 해당 `input`값들을 `map()`\n\\ No newline at end of file\n+* `try-except` 문으로 `input()`을 받고, 해당 `input`값들을 `map(int, s.split(' ))`\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701871388798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,5 @@\n \r\n ```\r\n \r\n * Python 라이브러리인 itertools를 활용하는 예제이다.\r\n-* `try-except` 문으로 `input()`을 받고, 해당 `input`값들을 `map(int, s.split(' ))`\n\\ No newline at end of file\n+* `try-except` 문으로 `input()`을 받고, 해당 `input`값들을 `map(int, s.split(' '))`을 통해 숫\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701871394850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,5 @@\n \r\n ```\r\n \r\n * Python 라이브러리인 itertools를 활용하는 예제이다.\r\n-* `try-except` 문으로 `input()`을 받고, 해당 `input`값들을 `map(int, s.split(' '))`을 통해 int 형태의 데이\n\\ No newline at end of file\n+* `try-except` 문으로 `input()`을 받고, 해당 `input`값들을 `map(int, s.split(' '))`을 통해 int 형태의 데잍\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1701870368775,
+            "name": "Commit-0",
+            "content": "#"
+        }
+    ]
+}
