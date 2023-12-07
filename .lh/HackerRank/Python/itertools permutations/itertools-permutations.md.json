@@ -1,0 +1,74 @@
+{
+    "sourceFile": "HackerRank/Python/itertools permutations/itertools-permutations.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 14,
+            "patches": [
+                {
+                    "date": 1701937687503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1701937693399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n # itertools permutations\r\n-> [<https://www.hackerrank.com/challenges/itertools-permutations/>](https://www.hackerrank.com/challenges/collections-counter/)\r\n+> <https://www.hackerrank.com/challenges/collections-counter/>\r\n \r\n # solution\r\n ```python\r\n from itertools import permutations\r\n"
+                },
+                {
+                    "date": 1701937701034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-# itertools permutations\r\n+# collections Counter\r\n > <https://www.hackerrank.com/challenges/collections-counter/>\r\n \r\n # solution\r\n ```python\r\n"
+                },
+                {
+                    "date": 1701937707812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,20 +2,29 @@\n > <https://www.hackerrank.com/challenges/collections-counter/>\r\n \r\n # solution\r\n ```python\r\n-from itertools import permutations\r\n+from collections import Counter\r\n \r\n-data = input().split(' ')\r\n+shoes_num = int(input())\r\n+shoes = map(int, input().split(' '))\r\n+customers = int(input())\r\n \r\n-if len(data) > 1:\r\n-    result = list(map(lambda x: ''.join(\r\n-        x), permutations(data[0], int(data[1]))))\r\n-else:\r\n-    result = list(map(lambda x: ''.join(x), permutations(data[0])))\r\n+shoes_counter = Counter(shoes)\r\n \r\n-for i in sorted(result):\r\n-    print(i)\r\n+sum = 0\r\n+while True:\r\n+    try:\r\n+        size, price = map(int, input().split(' '))\r\n+\r\n+        if shoes_counter[size] != 0:\r\n+            shoes_counter[size] = shoes_counter[size] - 1\r\n+            sum += price\r\n+\r\n+    except:\r\n+        break\r\n+\r\n+print(sum)\r\n ```\r\n \r\n * Python 라이브러리인 itertools를 활용하는 예제이다.\r\n * `data = input().split(' ')` 으로 `input`값들을 받고, 만약 input값 중 순열의 조합 수를 나타내는 숫자 값이 들어올 경우를 `if`문을 통해 처리하도록 했다.\r\n"
+                },
+                {
+                    "date": 1701937713990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,7 +25,7 @@\n \r\n print(sum)\r\n ```\r\n \r\n-* Python 라이브러리인 itertools를 활용하는 예제이다.\r\n+* Python 라이브러리인 collections를 활용하는 예제이다.\r\n * `data = input().split(' ')` 으로 `input`값들을 받고, 만약 input값 중 순열의 조합 수를 나타내는 숫자 값이 들어올 경우를 `if`문을 통해 처리하도록 했다.\r\n * `.sort()`는 아무런 return 없이 iterable한 객체의 순서를 정렬하는 것이고, `sorted`는 iterable 가능한 객체의 순서를 정렬한 별도의 새로운 객체를 만들어낸다.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701937729915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,6 +26,6 @@\n print(sum)\r\n ```\r\n \r\n * Python 라이브러리인 collections를 활용하는 예제이다.\r\n-* `data = input().split(' ')` 으로 `input`값들을 받고, 만약 input값 중 순열의 조합 수를 나타내는 숫자 값이 들어올 경우를 `if`문을 통해 처리하도록 했다.\r\n+* ``\r\n * `.sort()`는 아무런 return 없이 iterable한 객체의 순서를 정렬하는 것이고, `sorted`는 iterable 가능한 객체의 순서를 정렬한 별도의 새로운 객체를 만들어낸다.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701937744638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,6 +26,6 @@\n print(sum)\r\n ```\r\n \r\n * Python 라이브러리인 collections를 활용하는 예제이다.\r\n-* ``\r\n+* `Counter()`를 사용하면 dictionary 형태로 \r\n * `.sort()`는 아무런 return 없이 iterable한 객체의 순서를 정렬하는 것이고, `sorted`는 iterable 가능한 객체의 순서를 정렬한 별도의 새로운 객체를 만들어낸다.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701937753141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,6 +26,6 @@\n print(sum)\r\n ```\r\n \r\n * Python 라이브러리인 collections를 활용하는 예제이다.\r\n-* `Counter()`를 사용하면 dictionary 형태로 \r\n+* `Counter()`를 사용하면 dictionary 형태로 각 항목의 \r\n * `.sort()`는 아무런 return 없이 iterable한 객체의 순서를 정렬하는 것이고, `sorted`는 iterable 가능한 객체의 순서를 정렬한 별도의 새로운 객체를 만들어낸다.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701937769125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,6 +26,6 @@\n print(sum)\r\n ```\r\n \r\n * Python 라이브러리인 collections를 활용하는 예제이다.\r\n-* `Counter()`를 사용하면 dictionary 형태로 각 항목의 \r\n+* `Counter()`를 사용하면 dictionary 형태로 각 항목의 갯수를 나타내\r\n * `.sort()`는 아무런 return 없이 iterable한 객체의 순서를 정렬하는 것이고, `sorted`는 iterable 가능한 객체의 순서를 정렬한 별도의 새로운 객체를 만들어낸다.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701937774302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,6 +26,7 @@\n print(sum)\r\n ```\r\n \r\n * Python 라이브러리인 collections를 활용하는 예제이다.\r\n-* `Counter()`를 사용하면 dictionary 형태로 각 항목의 갯수를 나타내\r\n+* `Counter()`를 사용하면 dictionary 형태로 각 항목의 갯수를 나타낸다.\r\n+* \r\n * `.sort()`는 아무런 return 없이 iterable한 객체의 순서를 정렬하는 것이고, `sorted`는 iterable 가능한 객체의 순서를 정렬한 별도의 새로운 객체를 만들어낸다.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701937781199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,6 +27,6 @@\n ```\r\n \r\n * Python 라이브러리인 collections를 활용하는 예제이다.\r\n * `Counter()`를 사용하면 dictionary 형태로 각 항목의 갯수를 나타낸다.\r\n-* \r\n+* `{항목:\r\n * `.sort()`는 아무런 return 없이 iterable한 객체의 순서를 정렬하는 것이고, `sorted`는 iterable 가능한 객체의 순서를 정렬한 별도의 새로운 객체를 만들어낸다.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701937788756,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,6 +27,6 @@\n ```\r\n \r\n * Python 라이브러리인 collections를 활용하는 예제이다.\r\n * `Counter()`를 사용하면 dictionary 형태로 각 항목의 갯수를 나타낸다.\r\n-* `{항목:\r\n+* `{항목1: 갯수, }``\r\n * `.sort()`는 아무런 return 없이 iterable한 객체의 순서를 정렬하는 것이고, `sorted`는 iterable 가능한 객체의 순서를 정렬한 별도의 새로운 객체를 만들어낸다.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701937795284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,6 +27,6 @@\n ```\r\n \r\n * Python 라이브러리인 collections를 활용하는 예제이다.\r\n * `Counter()`를 사용하면 dictionary 형태로 각 항목의 갯수를 나타낸다.\r\n-* `{항목1: 갯수, }``\r\n+* `{항목1: 갯수, 항목2: 갯수...}`\r\n * `.sort()`는 아무런 return 없이 iterable한 객체의 순서를 정렬하는 것이고, `sorted`는 iterable 가능한 객체의 순서를 정렬한 별도의 새로운 객체를 만들어낸다.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701937801556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,6 +27,6 @@\n ```\r\n \r\n * Python 라이브러리인 collections를 활용하는 예제이다.\r\n * `Counter()`를 사용하면 dictionary 형태로 각 항목의 갯수를 나타낸다.\r\n-* `{항목1: 갯수, 항목2: 갯수...}`\r\n+  * `{항목1: 갯수, 항목2: 갯수 ...}`\r\n * `.sort()`는 아무런 return 없이 iterable한 객체의 순서를 정렬하는 것이고, `sorted`는 iterable 가능한 객체의 순서를 정렬한 별도의 새로운 객체를 만들어낸다.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1701937806779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,6 +27,5 @@\n ```\r\n \r\n * Python 라이브러리인 collections를 활용하는 예제이다.\r\n * `Counter()`를 사용하면 dictionary 형태로 각 항목의 갯수를 나타낸다.\r\n-  * `{항목1: 갯수, 항목2: 갯수 ...}`\r\n-* `.sort()`는 아무런 return 없이 iterable한 객체의 순서를 정렬하는 것이고, `sorted`는 iterable 가능한 객체의 순서를 정렬한 별도의 새로운 객체를 만들어낸다.\n\\ No newline at end of file\n+  * `{항목1: 갯수, 항목2: 갯수 ...}`\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1701937687503,
+            "name": "Commit-0",
+            "content": "# itertools permutations\r\n> [<https://www.hackerrank.com/challenges/itertools-permutations/>](https://www.hackerrank.com/challenges/collections-counter/)\r\n\r\n# solution\r\n```python\r\nfrom itertools import permutations\r\n\r\ndata = input().split(' ')\r\n\r\nif len(data) > 1:\r\n    result = list(map(lambda x: ''.join(\r\n        x), permutations(data[0], int(data[1]))))\r\nelse:\r\n    result = list(map(lambda x: ''.join(x), permutations(data[0])))\r\n\r\nfor i in sorted(result):\r\n    print(i)\r\n```\r\n\r\n* Python 라이브러리인 itertools를 활용하는 예제이다.\r\n* `data = input().split(' ')` 으로 `input`값들을 받고, 만약 input값 중 순열의 조합 수를 나타내는 숫자 값이 들어올 경우를 `if`문을 통해 처리하도록 했다.\r\n* `.sort()`는 아무런 return 없이 iterable한 객체의 순서를 정렬하는 것이고, `sorted`는 iterable 가능한 객체의 순서를 정렬한 별도의 새로운 객체를 만들어낸다."
+        }
+    ]
+}

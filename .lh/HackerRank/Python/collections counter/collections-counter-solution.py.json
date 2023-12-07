@@ -1,0 +1,18 @@
+{
+    "sourceFile": "HackerRank/Python/collections counter/collections-counter-solution.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1701937680846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1701937680846,
+            "name": "Commit-0",
+            "content": "from collections import Counter\r\n\r\nshoes_num = int(input())\r\nshoes = map(int, input().split(' '))\r\ncustomers = int(input())\r\n\r\nshoes_counter = Counter(shoes)\r\n\r\nsum = 0\r\nwhile True:\r\n    try:\r\n        size, price = map(int, input().split(' '))\r\n\r\n        if shoes_counter[size] != 0:\r\n            shoes_counter[size] = shoes_counter[size] - 1\r\n            sum += price\r\n\r\n    except:\r\n        break\r\n\r\nprint(sum)\r\n"
+        }
+    ]
+}
